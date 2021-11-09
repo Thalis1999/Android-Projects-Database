@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/codigo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Digite o código"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Digite o nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/codigo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/codigo"
+        app:layout_constraintTop_toBottomOf="@+id/codigo" />
+
+    <EditText
+        android:id="@+id/preco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Digite o preço"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/nome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nome"
+        app:layout_constraintTop_toBottomOf="@+id/nome" />
+
+    <EditText
+        android:id="@+id/quantidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Digite a quantidade"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/preco"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/preco"
+        app:layout_constraintTop_toBottomOf="@+id/preco" />
+
+    <Button
+        android:id="@+id/cadastrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cadastrar Firebase"
+        app:layout_constraintEnd_toEndOf="@+id/quantidade"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/quantidade"
+        app:layout_constraintTop_toBottomOf="@+id/quantidade" />
+
+    <Button
+        android:id="@+id/cadastrarID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cadastrar com ID"
+        app:layout_constraintEnd_toEndOf="@+id/cadastrar"
+        app:layout_constraintStart_toStartOf="@+id/cadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/cadastrar" />
+
+    <Button
+        android:id="@+id/buscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="@+id/cadastrarID"
+        app:layout_constraintStart_toStartOf="@+id/cadastrarID"
+        app:layout_constraintTop_toBottomOf="@+id/cadastrarID" />
+
+    <Button
+        android:id="@+id/apagar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Apagar"
+        app:layout_constraintEnd_toEndOf="@+id/buscar"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/buscar"
+        app:layout_constraintTop_toBottomOf="@+id/buscar" />
+
+    <Button
+        android:id="@+id/telaListar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Tela Listar"
+        app:layout_constraintEnd_toEndOf="@+id/apagar"
+        app:layout_constraintStart_toStartOf="@+id/apagar"
+        app:layout_constraintTop_toBottomOf="@+id/apagar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

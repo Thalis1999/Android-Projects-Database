@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/usuarioLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Digite o usuário"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/senhaLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Digite a senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/usuarioLogin"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/usuarioLogin"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioLogin" />
+
+    <Button
+        android:id="@+id/acessar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Acessar"
+        app:layout_constraintEnd_toEndOf="@+id/senhaLogin"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/senhaLogin"
+        app:layout_constraintTop_toBottomOf="@+id/senhaLogin" />
+
+    <Button
+        android:id="@+id/cadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/acessar"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/acessar"
+        app:layout_constraintTop_toBottomOf="@+id/acessar" />
+
+    <Button
+        android:id="@+id/listar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Listar"
+        app:layout_constraintEnd_toEndOf="@+id/cadastro"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/cadastro"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro" />
+</androidx.constraintlayout.widget.ConstraintLayout>

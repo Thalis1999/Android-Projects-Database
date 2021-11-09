@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "919560629870",
+    "project_id": "dsbfirebase-ec64c",
+    "storage_bucket": "dsbfirebase-ec64c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919560629870:android:dedfd4df674f4b4d3e807f",
+        "android_client_info": {
+          "package_name": "com.example.bancofirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919560629870-5ue8i3mmcjb4dsjp2lv2o5hp0rfrjs1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpSK9Mx8YyupaAYGs4HfueCTleLgkRkbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919560629870-5ue8i3mmcjb4dsjp2lv2o5hp0rfrjs1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
